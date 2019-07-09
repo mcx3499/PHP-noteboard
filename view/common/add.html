@@ -1,0 +1,29 @@
+<h1>我要许愿</h1>
+<form method="post" action="save.php">
+	昵称：
+	<input type="text" name="name" placeholder="匿名或16个字符">
+	贴纸颜色：
+	 <label>
+        <input type="radio" name="color" id="" class="a-radio1" value="green" checked>
+        <span class="b-radio1"></span>
+    </label>
+     <label>
+        <input type="radio" name="color" id="" class="a-radio2" value="red">
+        <span class="b-radio2"></span>
+    </label>
+     <label>
+        <input type="radio" name="color" id="" class="a-radio3" value="yellow">
+        <span class="b-radio3"></span>
+    </label>
+     <label>
+        <input type="radio" name="color" id="" class="a-radio4" value="blue">
+        <span class="b-radio4"></span>
+    </label>
+    <br />
+	我的愿望：<br />
+	<textarea id="mywish" name="content" placeholder="你可以在这里填写不超过100个字符"></textarea><br />
+	保护密码：
+	<input type="password" name="password" placeholder="删除留言时需要密码">
+	<input type="submit" value="提交">
+	<a href="javascript:close();">关闭</a>
+</form>

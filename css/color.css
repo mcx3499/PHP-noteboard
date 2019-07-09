@@ -1,0 +1,130 @@
+.a-radio1{
+            display: none;
+}
+.b-radio1{
+    display: inline-block;
+    border:1px solid black;
+    width:16px;
+    height: 16px;
+    border-radius:2px;
+    vertical-align: middle;
+    margin-right: 5px;
+    position: relative;
+    background-color: #2dbd64;
+}
+.b-radio1:before{
+    content: '';
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background: white;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left: -5px;
+    margin-top: -5px;
+    border-radius: 2px;
+    display: none;
+}
+.a-radio1:checked~.b-radio1:before{
+    display: block;
+}
+
+
+.a-radio2{
+            display: none;
+}
+.b-radio2{
+    display: inline-block;
+    border:1px solid black;
+    width:16px;
+    height: 16px;
+    border-radius:2px;
+    vertical-align: middle;
+    margin-right: 5px;
+    position: relative;
+    background-color: #fa6441;
+}
+.b-radio2:before{
+    content: '';
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background: white;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left: -5px;
+    margin-top: -5px;
+    border-radius: 2px;
+    display: none;
+}
+.a-radio2:checked~.b-radio2:before{
+    display: block;
+}
+
+
+.a-radio3{
+            display: none;
+}
+.b-radio3{
+    display: inline-block;
+    border:1px solid black;
+    width:16px;
+    height: 16px;
+    border-radius:2px;
+    vertical-align: middle;
+    margin-right: 5px;
+    position: relative;
+    background-color: #ffb213;
+}
+.b-radio3:before{
+    content: '';
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background: white;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left: -5px;
+    margin-top: -5px;
+    border-radius: 2px;
+    display: none;
+}
+.a-radio3:checked~.b-radio3:before{
+    display: block;
+}
+
+
+.a-radio4{
+            display: none;
+}
+.b-radio4{
+    display: inline-block;
+    border:1px solid black;
+    width:16px;
+    height: 16px;
+    border-radius:2px;
+    vertical-align: middle;
+    margin-right: 5px;
+    position: relative;
+    background-color: #2c95fa;
+}
+.b-radio4:before{
+    content: '';
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background: white;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left: -5px;
+    margin-top: -5px;
+    border-radius: 2px;
+    display: none;
+}
+.a-radio4:checked~.b-radio4:before{
+    display: block;
+}

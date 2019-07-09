@@ -1,0 +1,34 @@
+<div id="div5">
+<h1>我要许愿</h1>
+<form method="post" action="save.php?id=<?=$id?>&page=<?=$page?>">
+	昵称：
+	<input type="text" name="name" placeholder="匿名" value="<?=htmlspecialchars($edit['name'])?>">
+	贴纸颜色：
+	 <label>
+        <input type="radio" name="color" id="" class="a-radio1" value="green" 
+        <?php if($edit['color']=='green'): echo 'checked'; endif; ?> >
+        <span class="b-radio1"></span>
+    </label>
+     <label>
+        <input type="radio" name="color" id="" class="a-radio2" value="red"
+        <?php if($edit['color']=='red'): echo 'checked'; endif; ?> >
+        <span class="b-radio2"></span>
+    </label>
+     <label>
+        <input type="radio" name="color" id="" class="a-radio3" value="yellow"
+        <?php if($edit['color']=='yellow'): echo 'checked'; endif; ?> >
+        <span class="b-radio3"></span>
+    </label>
+     <label>
+        <input type="radio" name="color" id="" class="a-radio4" value="blue"
+        <?php if($edit['color']=='blue'): echo 'checked'; endif; ?> >
+        <span class="b-radio4"></span>
+    </label>
+    <br />
+	我的愿望：<br />
+	<textarea id="mywish" name="content"><?=htmlspecialchars($edit['content'])?></textarea><br />
+	<input type="hidden" name="password" value="<?=htmlspecialchars($edit['password'])?>">
+	<input type="submit" value="提交">
+	<a href="javascript:close3();">关闭</a>
+</form>
+</div>

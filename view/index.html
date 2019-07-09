@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<link rel="stylesheet" href="./css/wish.css">
+<link rel="stylesheet" href="./css/color.css">
+<title>wish</title>
+<script>
+	function wish(){
+      var div3 = document.getElementById("div3");
+      var btn = document.getElementById("btn");
+      div3.style.display = "block";
+      btn.style= "pointer-events:none";
+      }
+  function close(){
+      var div1 = document.getElementById("div0");
+		  var div2 = document.getElementById("div2");
+      var div3 = document.getElementById("div3");
+      var btn = document.getElementById("btn");
+      div3.style.display = "none";
+      div1.style= "pointer-events:";
+      div2.style= "pointer-events:";
+      btn.style= "pointer-events:";
+      }
+  function close2(){
+      var div4 = document.getElementById("div4");
+      div4.style.display = "none";
+      }
+  function close3(){
+      var div5 = document.getElementById("div5");
+      div5.style.display = "none";
+      }      
+</script>
+<body>
+<div id="div0">
+<?php foreach($data as $v): ?>
+<div id="div1" class="<?= $v['color'] ?>">
+	<div id="divul">
+  <ul>
+		<li><h1><?= htmlspecialchars($v['name']) ?></h1></li>
+		<li><?= htmlspecialchars($v['content']) ?></li>
+		<li>(<?= format_date($v['time']) ?>)</li>
+	</ul>
+  </div>
+  <a id="edit" href="./index.php?id=<?= $v['id'] ?>&page=<?= $page ?>" title="修改">✎</a>
+  <a id="del" href="./index.php?action=delete&id=<?= $v['id'] ?>&page=<?= $page ?>" title="删除">×</a>
+</div>
+<?php endforeach; ?>
+</div>
+<div id="div2">
+<?= page_html('./index.php?page=',$total,$page,$size)?>
+</div>
+<div id="div3">
+<?php  require'./view/common/add.html'; ?>
+</div>
+<?php if($id): require'./view/common/'.($checked ? 'edit':'password').'.html'; endif; ?>
+<input id="btn" type="button" onclick="wish();" value="我要许愿">
+</body>
+</html>
