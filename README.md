@@ -1,7 +1,7 @@
 # PHP-noteboard
-使用php语言制作的留言板
-数据库文件在根目录下php_noteboard.sql
-功能上有：
+>使用php语言制作的留言板
+>数据库文件在根目录下php_noteboard.sql
+>功能上有：
   -添加留言
   -删除留言（验证密码）
   -编辑留言（验证密码）
